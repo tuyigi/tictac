@@ -137,23 +137,17 @@ public class PlayServiceImpl implements PlayService {
                     }
                 }
 
-
-
-
             }
 
         } else {
 
-            // check if we have winner
-
-
             // get server positions
+
             List<Position> OPositions=findAllXOPositions(boardArray,config.getServer());
 
             // get player human positions
+
             List<Position> XPositions = findAllXOPositions(boardArray,config.getOpponent());
-
-
 
             // check we have more O that need only one O the we win
 
